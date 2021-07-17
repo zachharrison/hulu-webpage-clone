@@ -148,6 +148,10 @@ h3 {
   );
 }
 
+.mobile-text {
+  display: none;
+}
+
 .sub-header > div:last-of-type {
   justify-self: end;
   align-self: end;
@@ -160,7 +164,7 @@ h3 {
 /* Media Queries */
 @media (max-width: 768px) {
   .header .logo {
-    width: 200px;
+    width: 150px;
   }
 
   .header .header-content {
@@ -168,20 +172,56 @@ h3 {
     padding: 0 20px;
   }
 
-  .header .header-text-2 {
-    margin-bottom: 40px;
+  .header .header-text-1 {
+    font-size: 18px;
+    max-width: 270px;
+    margin-bottom: 20px;
   }
 
   .header .header-text-2 {
     display: none;
   }
 
-  /* TODO: Hide h3 text and replace with "Get all three." */
+  .btn-cta {
+    padding: 18px 32px;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .img-container img {
+    max-width: 180px;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-text {
+    display: block;
+  }
+
+  .text-container h3 {
+    display: none;
+  }
+
+  .text-container .sub-link {
+    margin: 0px 0px 0px 3px;
+  }
+
+  .btn-outline {
+    padding: 15px 32px;
+  }
 
   .sub-header {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 20px;
+    gap: 15px;
   }
 
   .sub-header img {
